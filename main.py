@@ -4,7 +4,7 @@ from streamlit_option_menu import option_menu
 from streamlit_lottie import  st_lottie
 
 
-st.set_page_config(page_title="Webpage", layout="wide")
+st.set_page_config(page_title="Descifrador")
 
 def  load_lottieurl(url):
     r = requests.get(url)
