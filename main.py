@@ -34,7 +34,7 @@ I'm from **Delhi, India**.
 ## Connect with Me
 - [GitHub](https://github.com/descifrador93)
 - [Instagram](https://instagram.com/descifrador93)
-- Discord ID: `descifrador93`
+- [Discord](https://discord.com/users/1040483999421833226)
 ''')
 
     # lottie_url = "https://lottie.host/eee3dbab-2db1-47ff-8517-bbe523b2e542/DJxtNRMpWw.json"
