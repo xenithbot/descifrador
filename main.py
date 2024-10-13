@@ -32,9 +32,9 @@ I have been programming for 5 years now, starting during the lockdowns of COVID-
 I'm from **Delhi, India**.
 
 ## Connect with Me
-- [GitHub](https://github.com/descifrador93)
-- [Instagram](https://instagram.com/descifrador93)
-- [Discord](https://discord.com/users/1040483999421833226)
+- GitHub: [descifrador93](https://github.com/descifrador93)
+- Instagram: [descifrador93](https://instagram.com/descifrador93)
+- Discord: [descifrador93](https://discord.com/users/1040483999421833226)
 ''')
 
     # lottie_url = "https://lottie.host/eee3dbab-2db1-47ff-8517-bbe523b2e542/DJxtNRMpWw.json"
