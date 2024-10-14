@@ -3,9 +3,12 @@ import requests
 from streamlit_option_menu import option_menu
 from streamlit_lottie import  st_lottie
 import os
+import toml
 import google.generativeai as genai
 
-api_key=os.getenv("GOOGLE_API_KEY")
+config = toml.load('config.toml')
+api_key = config['settings']['GOOGLE_API_KEY']
+
 genai.configure(api_key=api_key)
 model = genai.GenerativeModel("gemini-pro")
 chat = model.start_chat(history=[])
