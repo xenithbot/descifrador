@@ -114,5 +114,5 @@ if selected_page ==  "About Me":
     about_me()
 elif selected_page ==  "Skills":
     skills()
-elif selected_page == "Chat Bot":
+elif selected_page == "Bot":
     chatbot()
