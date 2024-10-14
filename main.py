@@ -48,7 +48,7 @@ I'm from **Delhi, India**.
         col1, col2 = st.columns(2)
 
         with col1:
-            st.write("## 📚 I Like To Talk About")
+            st.write("## I Like To Talk About")
             st.markdown("""
                         - **Technology Trends**
                         - **Programming Languages**
