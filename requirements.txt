@@ -1,4 +1,3 @@
 streamlit_option_menu
 streamlit_lottie
 google.generativeai
-python-dotenv
