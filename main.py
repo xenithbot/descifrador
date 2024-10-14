@@ -9,7 +9,7 @@ import google.generativeai as genai
 api_key = st.secrets["settings"]["GOOGLE_API_KEY"]
 
 genai.configure(api_key=api_key)
-model = genai.GenerativeModel("gemini-pro")
+model = genai.GenerativeModel("gemini-1.5-flash")
 chat = model.start_chat(history=[])
 
 st.set_page_config(page_title="Descifrador")
