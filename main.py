@@ -2,7 +2,14 @@ import streamlit as st
 import requests
 from streamlit_option_menu import option_menu
 from streamlit_lottie import  st_lottie
+from dotenv import load_dotenv
+import os
+import google.generativeai as genai
 
+load_dotenv()
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+model = genai.GenerativeModel("gemini-pro")
+chat = model.start_chat(history=[])
 
 st.set_page_config(page_title="Descifrador")
 
@@ -15,8 +22,8 @@ def  load_lottieurl(url):
 with st.sidebar:
     selected_page = option_menu(
         "Navigation",
-        ["About Me", "Skills"],
-        icons = ['house','briefcase'],
+        ["About Me", "Skills", "Chat Bot"],
+        icons = ['house','briefcase','robot'],
         menu_icon="gear",
         default_index=0,
     )
@@ -83,9 +90,28 @@ def skills():
                 st_lottie(lottie_animation, speed=1, height=300, key="skills")
             else:
                 st.error("Failed to load Lottie animation.")    
+
+def chatbot():
+    def get_gemini_response(question):
+        response = chat.send_message(question)
+        return response
+    
+    st.header("Powered by Gemini ChatBot Application")
+
+    if 'chat_history' not in st.session_state:
+        st.session_state['chat_history'] = []
+
+    input = st.text_input("Query:", key="input")
+    submit = st.button("Ask XenithBot")
+
+    if submit and input:
+        response = get_gemini_response(input)
+        st.subheader("Response:")
+        st.write(response.text)
     
 if selected_page ==  "About Me":
     about_me()
 elif selected_page ==  "Skills":
     skills()
-
+elif selected_page == "Chat Bot":
+    chatbot()
