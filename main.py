@@ -104,6 +104,7 @@ def chatbot():
 
     input = st.text_input("Query:", key="input")
     submit = st.button("Ask Bot")
+    st.warning('If the bot does not respond on the first try, repeat the request.')
 
     if submit and input:
         response = get_gemini_response(input)
