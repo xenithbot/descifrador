@@ -5,7 +5,8 @@ from streamlit_lottie import  st_lottie
 import os
 import google.generativeai as genai
 
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+api_key=os.getenv("GOOGLE_API_KEY")
+genai.configure(api_key=api_key)
 model = genai.GenerativeModel("gemini-pro")
 chat = model.start_chat(history=[])
 
