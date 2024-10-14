@@ -3,7 +3,9 @@ import requests
 from streamlit_option_menu import option_menu
 from streamlit_lottie import  st_lottie
 import os
+from dotenv import load_dotenv
 import google.generativeai as genai
+load_dotenv()
 
 api_key=os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=api_key)
