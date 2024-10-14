@@ -47,7 +47,7 @@ I'm from **Delhi, India**.
 - GitHub: [descifrador93](https://github.com/descifrador93)
 - Instagram: [descifrador93](https://instagram.com/descifrador93)
 - Discord: [descifrador93](https://discord.com/users/1040483999421833226)''')
-            st.write("## 📚 I Like To Talk About")
+            st.write("## I Like To Talk About")
             st.markdown("""
                         - **Technology Trends**
                         - **Programming Languages**
