@@ -6,8 +6,7 @@ import os
 import toml
 import google.generativeai as genai
 
-config = toml.load('config.toml')
-api_key = config['settings']['GOOGLE_API_KEY']
+api_key = st.secrets["settings"]["GOOGLE_API_KEY"]
 
 genai.configure(api_key=api_key)
 model = genai.GenerativeModel("gemini-pro")
