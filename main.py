@@ -30,11 +30,6 @@ I have been programming for 5 years now, starting during the lockdowns of COVID-
 
 ## Location
 I'm from **Delhi, India**.
-
-## Connect with Me
-- GitHub: [descifrador93](https://github.com/descifrador93)
-- Instagram: [descifrador93](https://instagram.com/descifrador93)
-- Discord: [descifrador93](https://discord.com/users/1040483999421833226)
 ''')
 
     # lottie_url = "https://lottie.host/eee3dbab-2db1-47ff-8517-bbe523b2e542/DJxtNRMpWw.json"
@@ -48,7 +43,11 @@ I'm from **Delhi, India**.
         col1, col2 = st.columns(2)
 
         with col1:
-            st.write("## I Like To Talk About")
+            st.markdown('''## Connect with Me
+- GitHub: [descifrador93](https://github.com/descifrador93)
+- Instagram: [descifrador93](https://instagram.com/descifrador93)
+- Discord: [descifrador93](https://discord.com/users/1040483999421833226)''')
+            st.write("## 📚 I Like To Talk About")
             st.markdown("""
                         - **Technology Trends**
                         - **Programming Languages**
@@ -58,12 +57,7 @@ I'm from **Delhi, India**.
                         - **Creative Projects** 
                         """) 
         with col2:
-            lottie_url = "https://lottie.host/eee3dbab-2db1-47ff-8517-bbe523b2e542/DJxtNRMpWw.json"
-            lottie_animation = load_lottieurl(lottie_url)
-            if lottie_animation:
-                st_lottie(lottie_animation, speed=1, height=300, key="achievements")
-            else:
-                st.error("Failed to load Lottie animation.")
+            st.image('image.png')
 
     st.warning("While I may not excel in design, I'm opting for Streamlit to create a straightforward and user-friendly interface.")
 
