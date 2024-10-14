@@ -23,7 +23,7 @@ def  load_lottieurl(url):
 with st.sidebar:
     selected_page = option_menu(
         "Navigation",
-        ["About Me", "Skills", "Chat Bot"],
+        ["About Me", "Skills", "Bot"],
         icons = ['house','briefcase','robot'],
         menu_icon="gear",
         default_index=0,
@@ -103,7 +103,7 @@ def chatbot():
         st.session_state['chat_history'] = []
 
     input = st.text_input("Query:", key="input")
-    submit = st.button("Ask XenithBot")
+    submit = st.button("Ask Bot")
 
     if submit and input:
         response = get_gemini_response(input)
