@@ -30,6 +30,7 @@ with st.sidebar:
     )
 
 def about_me():
+    st.info('This website is under development. I welcome suggestions via my Discord ID.')
     st.markdown('''# About Me
 
 Hello! I'm **Krishna**, also known as **descifrador93**. I'm 17 years old and currently a student in 11th grade, focusing on the science stream with Physics, Chemistry, and Mathematics (PCM), along with Computer Science. I'm preparing for the JEE to pursue my passion for engineering.
