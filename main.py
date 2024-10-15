@@ -114,14 +114,10 @@ def chatbot():
     submit = st.button("Ask Bot")
     st.warning('If the bot does not respond on the first try, repeat the request.')
 
-    def generate_response_chunks(response_text):
-        for chunk in response_text.splitlines():  # or any other way to split your text
-            yield chunk
-
     if submit and input:
         response = get_gemini_response(input)
         st.subheader("Response:")
-        st.write_stream(generate_response_chunks(response.text))
+        st.write(response.text)
     
 if selected_page ==  "About Me":
     about_me()
