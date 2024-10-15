@@ -117,7 +117,7 @@ def chatbot():
     if submit and input:
         response = get_gemini_response(input)
         st.subheader("Response:")
-        st.write(response.text)
+        st.write_stream(response.text)
     
 if selected_page ==  "About Me":
     about_me()
