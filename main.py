@@ -101,8 +101,15 @@ def chatbot():
 
     if 'chat_history' not in st.session_state:
         st.session_state['chat_history'] = []
-
-    input = st.text_input("Query:", key="input")
+    st.markdown("""
+    <style>
+        .stTextInput input {
+            border: 2px solid #519291;
+            border-radius: 5px;
+        }
+    </style>
+    """, unsafe_allow_html=True)
+    input = st.text_input("Query:", key="input", help="Type your question here")
     submit = st.button("Ask Bot")
     st.warning('If the bot does not respond on the first try, repeat the request.')
 
